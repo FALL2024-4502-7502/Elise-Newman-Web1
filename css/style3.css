@@ -39,12 +39,13 @@ p1 {
 
 nav {
     margin: 25px 0;
-    text-align: justify-all;
+    text-align: center;
     background-color: #8689F3;
 }
 
 nav ul {
     list-style-type: none;
+    display: inline;
 }
 
 nav li {
