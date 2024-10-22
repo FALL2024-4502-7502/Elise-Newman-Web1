@@ -28,7 +28,7 @@ header {
     padding: 20px;
 }
 
-div.container {
+iframe.container {
     position: relative;
   overflow: hidden;
   width: 100%;
