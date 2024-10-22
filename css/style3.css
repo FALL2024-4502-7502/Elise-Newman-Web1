@@ -39,7 +39,7 @@ p1 {
 
 nav {
     margin: 25px 0;
-    text-align: center;
+    text-align: justify-all;
     background-color: #8689F3;
 }
 
@@ -85,11 +85,6 @@ h2 {
     padding: 20px;
 }
 
-main img {
-    border: none;
-    width: 400px;
-    height: auto;
-}
 
 footer {
     margin-top: auto;
