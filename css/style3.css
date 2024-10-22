@@ -85,8 +85,13 @@ h2 {
     color: #4c177a;
     padding: 20px;
 }
-.text-holder
-.location-holder
+
+nav.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+
+
 footer {
     margin-top: auto;
     background-color: #EEBDF2;
