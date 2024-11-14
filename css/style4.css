@@ -115,6 +115,7 @@ footer {
 @media (max-width: 600px) {
     nav ul {
         display: flex;
+        setting overflow-x: hidden;
     }
 }
 @media (min-width: 555px) {
