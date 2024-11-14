@@ -23,6 +23,21 @@
       </ul>
     </nav>
     <title>Day in the Life</title>
+    <style>
+        /* Gallery styling */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3x3 grid for 9 images */
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+    </style>
     <main id="content">
         <section class="gallery-example">
             
