@@ -14,7 +14,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:itat,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:itat,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;&display=swap" rel="stylesheet">
         <style>
-        /* Add your styles here */
         .gallery-container {
             display: flex;
             flex-direction: column;
@@ -86,6 +85,13 @@
               <h1>This is an example of a day in my life!</h1>
             <p>This particular day was super busy so this is just the morning portion! I had a lot of fun being a Skit Liaison for Homecoming, and this is what the morning of entailed.</p>
             <p>I knew that it was going to be a stressful day, so I spent the morning taking time for myself! I spent time working out and with my roommates!</p>
+             <div class="gallery-container">
+            <img id="gallery-image" src="img/image 1.JPG" alt="Gallery Image">
+            <div class="gallery-controls">
+                <button onclick="previousImage()">Previous</button>
+                <button onclick="nextImage()">Next</button>
+            </div>
+        </div>
 
 <div class="button_holder">
       <button id="button_previous" class="button-start">&#9664; Previous</button>
