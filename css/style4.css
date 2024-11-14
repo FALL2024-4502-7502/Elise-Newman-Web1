@@ -58,6 +58,7 @@ nav.static {
 nav ul {
     list-style-type: none;
     display: inline;
+    text-align: center;
 }
 
 nav li {
