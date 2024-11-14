@@ -246,29 +246,9 @@
         src: "img/image3.JPG",
         caption: "Newman and Rory Whetstone roommate leave apartment. <time datetime='2024'>2024</time>"
     },
-    // Add more images and captions as needed
+
 ];
 
-let currentIndex = 0;
-
-function showImage(index) {
-    const imageElement = document.getElementById("gallery-image");
-    const captionElement = document.getElementById("gallery-caption");
-
-    // Set the image src and the caption content
-    imageElement.src = images[index].src;
-    captionElement.innerHTML = images[index].caption; // Use innerHTML to preserve HTML tags in caption
-}
-
-function nextImage() {
-    currentIndex = (currentIndex + 1) % images.length; // Wrap around to the beginning
-    showImage(currentIndex);
-}
-
-function previousImage() {
-    currentIndex = (currentIndex - 1 + images.length) % images.length; // Wrap around to the end
-    showImage(currentIndex);
-}
 
 let currentIndex = 0;
 
