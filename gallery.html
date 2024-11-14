@@ -13,6 +13,63 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:itat,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:itat,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:itat,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;&display=swap" rel="stylesheet">
+        <style>
+        /* Add your styles here */
+        .gallery-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+        .gallery-container img {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+            transition: opacity 0.5s;
+        }
+        .gallery-controls {
+            margin-top: 10px;
+        }
+        .gallery-controls button {
+            padding: 10px 20px;
+            margin: 0 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .gallery-controls button:hover {
+            background-color: #555;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            align-items: center;
+            justify-content: center;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            font-size: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
     </head>
     <nav>
       <ul>
@@ -29,30 +86,7 @@
               <h1>This is an example of a day in my life!</h1>
             <p>This particular day was super busy so this is just the morning portion! I had a lot of fun being a Skit Liaison for Homecoming, and this is what the morning of entailed.</p>
             <p>I knew that it was going to be a stressful day, so I spent the morning taking time for myself! I spent time working out and with my roommates!</p>
-<script>
-    const images = [
-        "img/image 1.JPG",
-        "img/image 2.JPG",
-        "img/image 3.JPG",
-        "img/image 4.JPG",
-        "img/image 5.JPG",
-        "img/image 6.JPG",
-        "img/image 7.JPG",
-        "img/image 8.JPG",
-        "img/image 9.JPG"
-    ];
-let currentIndex = 0;
 
-    function nextImage() {
-        currentIndex = (currentIndex + 1) % images.length; // Loop back to start if at the end
-        document.getElementById("gallery-image").src = images[currentIndex];
-    }
-
-    function previousImage() {
-        currentIndex = (currentIndex - 1 + images.length) % images.length; // Loop back to end if at start
-        document.getElementById("gallery-image").src = images[currentIndex];
-    }
-</script>
 <div class="button_holder">
       <button id="button_previous" class="button-start">&#9664; Previous</button>
       <p id="stepper"></p>
