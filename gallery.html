@@ -96,7 +96,8 @@
                 <button onclick="nextImage()">Next</button>
             </div>
         </div>
-
+</section>
+</main>
 
     <figure class="gallery-image hideThis">
       <img src="img/image 3.JPG">
@@ -187,15 +188,6 @@
         }
     </style>
 </head>
-<body>
-<div class="gallery-container">
-    <img id="gallery-image" src="img/image 1.JPG" alt="Photo Gallery">
-    <div class="gallery-controls">
-        <button onclick="previousImage()">Previous</button>
-        <button onclick="nextImage()">Next</button>
-    </div>
-</div>
-</body>
 <div class="gallery">
     <img src="img/image 1.JPG" alt="Photo 1" onclick="openLightbox(this)">
     <img src="img/image 2.JPG" alt="Photo 2" onclick="openLightbox(this)">
@@ -207,6 +199,71 @@
     <img src="img/image 8.JPG" alt="Photo 8" onclick="openLightbox(this)">
     <img src="img/image 9.JPG" alt="Photo 9" onclick="openLightbox(this)">
 </div>
+ <script>
+        // JavaScript for Gallery Functionality
+        const galleryItems = [
+            {
+                src: "img/image1.JPG",
+                caption: "Elise Newman shows an image of a made bed to indicate a day beginning. <time datetime='2024'>2024</time>"
+            },
+            {
+                src: "img/image2.JPG",
+                caption: "Newman gets up for the day. <time datetime='2024'>2024</time>"
+            },
+            {
+                src: "img/image3.JPG",
+                caption: "Newman and Rory Whetstone leave the apartment. <time datetime='2024'>2024</time>"
+            },
+            {
+                src: "img/image4.JPG",
+                caption: "Newman and Whetstone walk to the gym. <time datetime='2024'>2024</time>"
+            },
+            {
+                src: "img/image5.JPG",
+                caption: "Newman and Whetstone get Starbucks after the gym. <time datetime='2024'>2024</time>"
+            },
+            {
+                src: "img/image6.JPG",
+                caption: "Goldie’s Bagels for breakfast. <time datetime='2024'>2024</time>"
+            },
+            {
+                src: "img/image7.JPG",
+                caption: "Up-close picture of the bagel. <time datetime='2024'>2024</time>"
+            },
+            {
+                src: "img/image8.JPG",
+                caption: "Friend Gabbie Cannon joins at Goldie's. <time datetime='2024'>2024</time>"
+            },
+            {
+                src: "img/image9.JPG",
+                caption: "Back at the apartment, Elise is ready for the day. <time datetime='2024'>2024</time>"
+            }
+        ];
+
+        let currentIndex = 0;
+
+        function showImage(index) {
+            const imageElement = document.getElementById("gallery-image");
+            const captionElement = document.getElementById("gallery-caption");
+
+            // Update the image source and caption
+            imageElement.src = galleryItems[index].src;
+            captionElement.innerHTML = galleryItems[index].caption;
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % galleryItems.length; // Wrap around to the beginning
+            showImage(currentIndex);
+        }
+
+        function previousImage() {
+            currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length; // Wrap around to the end
+            showImage(currentIndex);
+        }
+
+        // Initialize with the first image
+        showImage(currentIndex);
+    </script>
 <script>
     const images = [
         "img/image 1.JPG",
