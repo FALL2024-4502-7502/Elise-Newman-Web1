@@ -138,7 +138,17 @@
     </style>
 </head>
 <body>
+<div class="gallery-container">
+    <!-- Image element to display the gallery -->
+    <img id="gallery-image" src="img/image 1.JPG" alt="Photo Gallery">
 
+    <!-- Next and Previous buttons -->
+    <div class="gallery-controls">
+        <button onclick="previousImage()">Previous</button>
+        <button onclick="nextImage()">Next</button>
+    </div>
+</div>
+</body>
 <div class="gallery">
     <img src="img/image 1.JPG" alt="Photo 1" onclick="openLightbox(this)">
     <img src="img/image 2.JPG" alt="Photo 2" onclick="openLightbox(this)">
