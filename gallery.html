@@ -220,68 +220,6 @@
         "img/image 9.JPG"
     
     ];
-    const galleryItems = [
-    {
-        src: "img/image1.JPG",
-        caption: "Elise Newman shows an image of a made bed to indicate a day beginning. <time datetime='2024'>2024</time>"
-    },
-    {
-        src: "img/image2.JPG",
-        caption: "Newman gets up for the day. <time datetime='2024'>2024</time>"
-    },
-    {
-        src: "img/image3.JPG",
-        caption: "Newman and Rory Whetstone leave the apartment. <time datetime='2024'>2024</time>"
-    },
-    {
-        src: "img/image4.JPG",
-        caption: "Newman and Whetstone walk to the gym. <time datetime='2024'>2024</time>"
-    },
-    {
-        src: "img/image5.JPG",
-        caption: "Newman and Whetstone get Starbucks after the gym. <time datetime='2024'>2024</time>"
-    },
-    {
-        src: "img/image6.JPG",
-        caption: "Goldie’s Bagels for breakfast. <time datetime='2024'>2024</time>"
-    },
-    {
-        src: "img/image7.JPG",
-        caption: "Up-close picture of the bagel. <time datetime='2024'>2024</time>"
-    },
-    {
-        src: "img/image8.JPG",
-        caption: "Friend Gabbie Cannon joins at Goldie's. <time datetime='2024'>2024</time>"
-    },
-    {
-        src: "img/image9.JPG",
-        caption: "Back at the apartment, Elise is ready for the day. <time datetime='2024'>2024</time>"
-    }
-];
-
-let currentIndex = 0;
-
-function showImage(index) {
-    const imageElement = document.getElementById("gallery-image");
-    const captionElement = document.getElementById("gallery-caption");
-
-    // Set the image src and the caption content
-    imageElement.src = galleryItems[index].src;
-    captionElement.innerHTML = galleryItems[index].caption; // Use innerHTML to preserve HTML tags in caption
-}
-
-function nextImage() {
-    currentIndex = (currentIndex + 1) % galleryItems.length; // Wrap around to the beginning
-    showImage(currentIndex);
-}
-
-function previousImage() {
-    currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length; // Wrap around to the end
-    showImage(currentIndex);
-}
-
-// Initialize with the first image
-showImage(currentIndex);
 
 
 
