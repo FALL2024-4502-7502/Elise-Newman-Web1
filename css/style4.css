@@ -121,10 +121,12 @@ footer {
 @media (min-width: 555px) {
             body {
                 background-color: #7ED4F4;
+                setting overflow-x: hidden;
             }
         }
 @media (min-width: 800px) {
             body {
                 background-color: #7ED4F4;
+                setting overflow-x: hidden;
             }
         }
