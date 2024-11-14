@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day in the Life</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .lightbox img {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 5px;
+        }
+
+        .lightbox .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="gallery">
+    <img src="image 1.JPG" alt="Photo 1" onclick="openLightbox(this)">
+    <img src="image 2.JPG" alt="Photo 2" onclick="openLightbox(this)">
+    <img src="image 3.JPG" alt="Photo 3" onclick="openLightbox(this)">
+    <img src="image 4.JPG" alt="Photo 4" onclick="openLightbox(this)">
+    <img src="image 5.JPG" alt="Photo 5" onclick="openLightbox(this)">
+    <img src="image 6.JPG" alt="Photo 6" onclick="openLightbox(this)">
+    <img src="image 7.JPG" alt="Photo 7" onclick="openLightbox(this)">
+    <img src="image 8.JPG" alt="Photo 8" onclick="openLightbox(this)">
+    <img src="image 9.JPG" alt="Photo 8" onclick="openLightbox(this)">
+</div>
+
+<div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img" src="" alt="Enlarged Photo">
+</div>
+
+<script>
+
+    function openLightbox(element) {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        lightbox.style.display = "flex";
+        lightboxImg.src = element.src;
+    }
+
+
+    function closeLightbox() {
+        const lightbox = document.getElementById("lightbox");
+        lightbox.style.display = "none";
+    }
+</script>
+
+</body>
+</html>
