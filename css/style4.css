@@ -2,6 +2,24 @@ body, h1, h2, p1, p2, ul {
     margin: 0;
     padding: 0;
 }
+.skip-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+}
+
+.skip-link:focus{
+  width: unset;
+  height: unset;
+  position: relative;
+  padding: unset;
+  margin: unset;
+  font-size: 2rem;
+}
 
 body {
     display: flex;
