@@ -13,6 +13,15 @@ body, h1, p, ul {
   border: 0;
 }
 
+.skip-link:focus{
+  width: unset;
+  height: unset;
+  position: relative;
+  padding: unset;
+  margin: unset;
+  font-size: 2rem;
+}
+
 body {
     display: flex;
     flex-direction: column;
