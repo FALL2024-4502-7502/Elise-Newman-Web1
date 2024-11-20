@@ -125,6 +125,7 @@ footer {
     nav ul {
         display: flex;
         flex-direction: column;
+        overflow-x:hidden;
     }
 }
 
