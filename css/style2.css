@@ -84,7 +84,7 @@ nav a:hover { text-decoration: none; }
 main {
     text-align: center;
     background-color: #ffd8e9;
-    width: 100%;
+    max-width: 100%;
     color: #4c177a;
     border: none;
 /*    padding: 20px;*/
@@ -92,7 +92,7 @@ main {
     font-size: 25px;
 }
 
-h2 { 
+h2 {  
     background-color: #CBC3E3;
     text-align: center;
     font-family: Lato, serif;
