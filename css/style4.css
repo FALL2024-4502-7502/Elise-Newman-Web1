@@ -31,8 +31,10 @@ body {
     border: none;
     margin: 0;
     padding: 0;
-    width: 100%;
+    max-width: 1000px;
     height: 100%;
+    overflow-x: hidden;
+    margin: auto;
 
 }
 
