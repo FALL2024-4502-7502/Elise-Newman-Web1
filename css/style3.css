@@ -50,7 +50,7 @@ header {
 iframe.container {
     position: relative;
   overflow: hidden;
-  width: 100%;
+  max-width: 100%;
   padding-top: 56.25%; 
 }
 
