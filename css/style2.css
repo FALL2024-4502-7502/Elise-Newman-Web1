@@ -126,5 +126,13 @@ footer {
         flex-direction: column;
         overflow-x:hidden;
     }
+    body {
+        display: flex;
+        setting overflow-x: hidden;
+    }
+    footer {
+        display: flex;
+        setting overflow-x: hidden;
+    }
 }
 
