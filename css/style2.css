@@ -34,7 +34,8 @@ body {
     padding: 0;
     max-width: 1000px;
     height: 100%;
-    overflow-x:hidden;
+    overflow-x: hidden;
+    margin: auto;
 
 }
 
