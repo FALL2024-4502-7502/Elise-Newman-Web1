@@ -104,6 +104,10 @@ main {
     font-family: Quicksand, sans-serif;
     font-size: 20px;
 }
+main ul {
+    list-style-type: none;
+    display: inline;
+}
 
 h2 {  
     background-color: #CBC3E3;
