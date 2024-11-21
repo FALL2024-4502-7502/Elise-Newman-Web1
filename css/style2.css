@@ -43,9 +43,9 @@ header {
     text-align: center;
     font-family: Lato, serif;
     font-size: 30px;
-    width: 100%;
+    max-width: 100%;
     color: #4c177a;
-    padding: 20px;
+/*    padding: 20px;*/
 }
 p1 {
     background-color: #7EA8F4;
