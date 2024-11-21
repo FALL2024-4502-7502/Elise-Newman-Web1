@@ -79,6 +79,7 @@ nav ul {
 }
 
 nav li {
+    list-style-type: none;
     margin: 8 px 0;
     font-size: 20px;
 }
@@ -131,6 +132,10 @@ footer {
 
 @media (max-width: 600px) {
     nav ul {
+        display: flex;
+        setting overflow-x: hidden;
+    }
+    body {
         display: flex;
         setting overflow-x: hidden;
     }
