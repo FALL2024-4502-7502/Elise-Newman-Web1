@@ -130,13 +130,22 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 600px) {
-    nav ul {
+    /*nav ul {
         display: flex;
         setting overflow-x: hidden;
     }
     body {
         display: flex;
         setting overflow-x: hidden;
-    }
+    }*/
+
+@media (max-width: 768px) {
+  .navigation ul {
+    flex-direction: column; /* Change to vertical column */
+    align-items: flex-start; /* Align to the start for better UX */
+  }
+
+  .navigation li {
+    margin: 10px 0; /* Add spacing between items */
+  }
 }
